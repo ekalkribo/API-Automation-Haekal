@@ -1,0 +1,86 @@
+{
+  "config": {
+    "configFile": "C:\\Users\\V\\API Automation Haekal\\playwright.config.js",
+    "rootDir": "C:/Users/V/API Automation Haekal",
+    "forbidOnly": false,
+    "fullyParallel": true,
+    "globalSetup": null,
+    "globalTeardown": null,
+    "globalTimeout": 0,
+    "grep": {},
+    "grepInvert": null,
+    "maxFailures": 0,
+    "metadata": {},
+    "preserveOutput": "always",
+    "reporter": [
+      [
+        "list",
+        null
+      ],
+      [
+        "json",
+        {
+          "outputFile": "report/json/report.json"
+        }
+      ],
+      [
+        "html",
+        {
+          "outputFolder": "report/html",
+          "open": "never"
+        }
+      ]
+    ],
+    "reportSlowTests": {
+      "max": 5,
+      "threshold": 15000
+    },
+    "quiet": false,
+    "projects": [
+      {
+        "outputDir": "C:/Users/V/API Automation Haekal/test-results",
+        "repeatEach": 1,
+        "retries": 0,
+        "metadata": {},
+        "id": "",
+        "name": "",
+        "testDir": "C:/Users/V/API Automation Haekal",
+        "testIgnore": [],
+        "testMatch": [
+          "**/*.@(spec|test).?(c|m)[jt]s?(x)"
+        ],
+        "timeout": 30000
+      }
+    ],
+    "shard": null,
+    "updateSnapshots": "missing",
+    "version": "1.49.1",
+    "workers": 4,
+    "webServer": null
+  },
+  "suites": [],
+  "errors": [
+    {
+      "message": "ReferenceError: userSchemaekal is not defined",
+      "stack": "ReferenceError: userSchemaekal is not defined\n    at Object.<anonymous> (C:\\Users\\V\\API Automation Haekal\\api.spec.js:19:30)",
+      "location": {
+        "file": "C:\\Users\\V\\API Automation Haekal\\api.spec.js",
+        "column": 30,
+        "line": 19
+      },
+      "snippet": "\u001b[90m   at \u001b[39mapi.spec.js:19\n\n\u001b[0m \u001b[90m 17 |\u001b[39m\n \u001b[90m 18 |\u001b[39m \u001b[90m// Kompilasi schema untuk validasi\u001b[39m\n\u001b[31m\u001b[1m>\u001b[22m\u001b[39m\u001b[90m 19 |\u001b[39m \u001b[36mconst\u001b[39m validate \u001b[33m=\u001b[39m ajv\u001b[33m.\u001b[39mcompile(userSchemaekal)\u001b[33m;\u001b[39m\n \u001b[90m    |\u001b[39m                              \u001b[31m\u001b[1m^\u001b[22m\u001b[39m\n \u001b[90m 20 |\u001b[39m\n \u001b[90m 21 |\u001b[39m \u001b[90m// ------------------ GET Users ------------------\u001b[39m\n \u001b[90m 22 |\u001b[39m\u001b[0m"
+    },
+    {
+      "message": "Error: No tests found",
+      "stack": "Error: No tests found"
+    }
+  ],
+  "stats": {
+    "startTime": "2024-12-20T18:19:52.465Z",
+    "duration": 79.58000000000004,
+    "expected": 0,
+    "skipped": 0,
+    "unexpected": 0,
+    "flaky": 0
+  }
+}
